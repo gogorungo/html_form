@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러가지 요소 연습</title>
+    <style>
+        fieldset{
+            border: none;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="text" name="text">
+        <fieldset>
+            <legend>여러가지 폼요소 연습</legend>
+            <p>
+                <input type="text" id="user_id" name="user_id" value="user_id" size="20" maxlength="10" placeholder="아이디입력" autofocus autocomplete="off">
+            </p>
+            <p>
+                <input type="password" id="user_pw" name="user_ps" value="" size="20" maxlength="12" placeholder="패스워드 입력" autofocus autocomplete="off">
+            </p>
+            <p>
+                남자<input type="radio" name="gender" checked> 여자<input type="radio" name="gender">
+            </p>
+            <p>
+                캠핑 <input type="checkbox" name="hobit"> 낚시 <input type="checkbox" name="hobit">
+            </p>
+            <p>
+                <input type="submit" value="보내기"><input type="reset" value="취소"><button>일반 버튼</button><input type="image" src="./images/ok_button.gif" alt="확인">
+            </p>
+            <p>
+                <input type="file">
+            </p>
+            <p>
+                <textarea cols="50" rows="10"></textarea>
+            </p>
+            <p>
+                <select size="3">
+                    <option>네이버</option>
+                    <option>구글</option>
+                    <option>네이트</option>
+                </select>
+            </p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
